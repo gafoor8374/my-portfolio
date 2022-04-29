@@ -23,10 +23,10 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={BackEnd}
-              title="ONNBIKE BACKEND"
+              title="ONNBIKE Complete Site"
               description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              link="https://github.com/Ritesh6997/ONN-BIKE-Backend"
-              link1="https://onnbikes.netlify.app/"
+              link="https://github.com/Ritesh6997/ONN-BIke-Complete-Project"
+              link1="https://sharp-brahmagupta-a8b2e3.netlify.app/"
             />
           </Col>
 
