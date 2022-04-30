@@ -4,33 +4,37 @@ import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import About from "../About/About";
+import Projects from "../Projects/Projects";
+// import ResumeNew from "../Resume/ResumeNew";
 
 function Home() {
   return (
-    <section>
-      <Container fluid className="home-section" id="home">
-        <Particle />
-        <Container className="home-content">
-          <Row>
-            <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
-                </span>
-              </h1>
+    <div>
+      <section>
+        <Container fluid className="home-section" id="home">
+          <Particle />
+          <Container className="home-content">
+            <Row>
+              <Col md={7} className="home-header">
+                <h1 style={{ paddingBottom: 15 }} className="heading">
+                  Hi There!{" "}
+                  <span className="wave" role="img" aria-labelledby="wave">
+                    👋🏻
+                  </span>
+                </h1>
 
-              <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> SHAIK GAFOOR</strong>
-              </h1>
+                <h1 className="heading-name">
+                  I'M
+                  <strong className="main-name"> SHAIK GAFOOR</strong>
+                </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
-                <Type />
-              </div>
-            </Col>
+                <div style={{ padding: 50, textAlign: "left" }}>
+                  <Type />
+                </div>
+              </Col>
 
-            {/* <Col md={5} style={{ paddingBottom: 20 }}>
+              {/* <Col md={5} style={{ paddingBottom: 20 }}>
               <img
                 src={homeLogo}
                 alt="home pic"
@@ -38,11 +42,35 @@ function Home() {
                 style={{ maxHeight: "450px" }}
               />
             </Col> */}
-          </Row>
+            </Row>
+          </Container>
         </Container>
-      </Container>
-      <Home2 />
-    </section>
+        <Home2 />
+      </section>
+
+      <section id="about">
+        <About />
+      </section>
+
+      <section id="projects">
+        <Projects />
+      </section>
+
+      {/* <section>
+        <ResumeNew />
+      </section> */}
+
+      <div>
+        <h3>Contact Me</h3>
+        <a
+          className="contact"
+          type="button"
+          href="mailto:shaikgafoor498814@gmail.com"
+        >
+          Contact
+        </a>
+      </div>
+    </div>
   );
 }
 
